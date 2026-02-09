@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ArcaBot Flow - Frontend 🚀
+> Hospedado em: [arcacod.netlify.app](https://arcacod.netlify.app)
 
-# Run and deploy your AI Studio app
+Esta é a interface web do **Arcabot Flow**, um sistema avançado de automação e gerenciamento de bots de WhatsApp com Inteligência Artificial (Gemini).
 
-This contains everything you need to run your app locally.
+## 🛠️ Tecnologias
+- **React 19**
+- **Vite** (Build ultra-rápido)
+- **TypeScript**
+- **Lucide React** (Ícones)
+- **Recharts** (Gráficos)
+- **Socket.io Client** (Comunicação Real-Time com o Backend)
 
-View your app in AI Studio: https://ai.studio/apps/drive/15jQ3fKQf_OtWdw6tiaBlHcRA0SobLofu
+## 📦 Como Rodar Localmente
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Configure o `.env.local` com a URL do seu backend (Render):
+   ```env
+   VITE_API_URL=https://arcabot-zap.onrender.com
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-## Run Locally
+## 🌐 Deploy no Netlify
+Este projeto está configurado para deploy contínuo no Netlify.
 
-**Prerequisites:**  Node.js
+- **Build Command:** `npm run build`
+- **Publish Directory:** `dist`
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+*Desenvolvido por Victor BTA*
