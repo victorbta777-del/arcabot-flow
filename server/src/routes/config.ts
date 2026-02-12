@@ -7,7 +7,7 @@ export function createConfigRoutes() {
     // GET /api/bots/:botId/config - Get bot configuration
     router.get('/:botId', async (req: Request, res: Response) => {
         try {
-            const { botId } = req.params;
+            const botId = req.params.botId as string;
             const config = await supabase.getBotConfig(botId);
 
             if (!config) {
@@ -24,7 +24,7 @@ export function createConfigRoutes() {
     // PUT /api/bots/:botId/config - Update bot configuration
     router.put('/:botId', async (req: Request, res: Response) => {
         try {
-            const { botId } = req.params;
+            const botId = req.params.botId as string;
             const updates = req.body;
 
             // Check if config exists
